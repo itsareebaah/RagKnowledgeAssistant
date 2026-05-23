@@ -71,43 +71,6 @@ Upload PDFs and office files · Store vector embeddings locally · Ask questions
 - **Developer-friendly API** — FastAPI with typed schemas and `/docs` explorer  
 
 ---
-
-## Architecture
-
-```mermaid
-flowchart TB
-    subgraph Client
-        UI[Web UI]
-        API_Client[REST / API Clients]
-    end
-
-    subgraph Application
-        API[FastAPI Server]
-        DP[Document Processor]
-        EMB[Embedding Model]
-        VS[(ChromaDB)]
-        RAG[RAG Chain]
-    end
-
-    subgraph LLM
-        OAI[OpenAI]
-        OLL[Ollama]
-        EXT[Extractive Fallback]
-    end
-
-    UI --> API
-    API_Client --> API
-    API --> DP
-    DP --> EMB
-    EMB --> VS
-    API --> VS
-    VS --> RAG
-    RAG --> OAI
-    RAG --> OLL
-    RAG --> EXT
-    RAG --> API
-```
-
 **Request flow**
 
 1. **Ingest** — File → text extraction → chunking → embedding → ChromaDB  
