@@ -1,0 +1,17 @@
+ACME Corp — Employee Handbook (excerpt)
+
+Vacation Policy
+New full-time employees receive 15 paid vacation days per year, starting after a 90-day probation period.
+After 5 years of service, vacation increases to 20 days per year.
+
+Remote Work
+Employees may work remotely up to 3 days per week with manager approval.
+All remote workers must be available during core hours: 10:00 AM – 3:00 PM local time.
+
+Refund Policy (B2B customers)
+Enterprise customers may request a full refund within 30 days of purchase if onboarding was not completed.
+Refunds after 30 days require VP approval.
+
+Support Hours
+Technical support is available Monday–Friday, 9:00 AM – 6:00 PM EST.
+Emergency support for Enterprise tier: 24/7 via the dedicated hotline.

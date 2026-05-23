@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Knowledge Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <h1>RAG Knowledge Assistant</h1>
+      <p>Upload company documents, store embeddings, and get contextual answers.</p>
+    </header>
+
+    <section class="card">
+      <h2>Upload documents</h2>
+      <p class="hint">PDF, DOCX, TXT, MD, CSV</p>
+      <form id="upload-form">
+        <input type="file" id="file-input" accept=".pdf,.docx,.txt,.md,.csv" required />
+        <button type="submit">Upload &amp; index</button>
+      </form>
+      <div id="upload-status" class="status"></div>
+      <ul id="doc-list" class="doc-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Ask a question</h2>
+      <form id="query-form">
+        <textarea id="question" rows="3" placeholder="What is our refund policy?" required></textarea>
+        <button type="submit">Get answer</button>
+      </form>
+      <div id="query-status" class="status"></div>
+      <article id="answer" class="answer hidden"></article>
+      <div id="sources" class="sources hidden">
+        <h3>Sources</h3>
+        <div id="source-list"></div>
+      </div>
+    </section>
+
+    <footer id="meta"></footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
